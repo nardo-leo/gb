@@ -4,11 +4,11 @@ h = 0
 
 if s > 0:
     if s >= 60 and s < 3600:
-        m = int(s/60)
+        m = int(s / 60)
         s -= m * 60
     elif s >= 3600:
-        h = int(s/3600)
-        m = int((s - h * 3600)/60)
+        h = int(s / 3600)
+        m = int((s - h * 3600) / 60)
         s -= h * 3600 + m * 60
 
 
