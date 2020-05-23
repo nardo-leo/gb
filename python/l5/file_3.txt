@@ -1,0 +1,3 @@
+Ivanov 39000
+Petrov 18599
+Guido 300000
