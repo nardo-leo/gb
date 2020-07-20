@@ -1,0 +1,1 @@
+mysqldump mysql help_keyword > help_heyword.sql
