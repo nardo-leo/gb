@@ -3,7 +3,6 @@ import os.path
 import time
 import requests
 
-
 class Parser5Ka:
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X ' +
@@ -53,6 +52,7 @@ class Parser5Ka:
                     params={}
             category['products'] = products
             self.add_products(category, category_code)
+
 
 if __name__ == '__main__':
     url = 'https://5ka.ru/api/v2/special_offers/'
