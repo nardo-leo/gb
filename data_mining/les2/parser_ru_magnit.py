@@ -30,7 +30,8 @@ class MagnitParser:
         for product in self.parse(soup):
             self.save(product)
 
-    def price_to_float(self, price_block):
+    @staticmethod
+    def price_to_float(price_block):
         price_int = price_block.find('span',
                                      attrs={'class',
                                             'label__price-integer'}).text
@@ -39,7 +40,8 @@ class MagnitParser:
                                             'label__price-decimal'}).text
         return float(f'{price_int}.{price_dec}')
 
-    def date_to_datetime(self, str_date):
+    @staticmethod
+    def date_to_datetime(str_date: str):
         list_of_months = ['января', 'февраля', 'марта', 'апреля', 'мая',
                           'июня', 'июля', 'августа', 'сентября', 'октября',
                           'ноября', 'декабря']
