@@ -1,6 +1,12 @@
 # Created by https://www.gitignore.io/api/vim,macos
 # Edit at https://www.gitignore.io/?templates=vim,macos
 
+# All hidden files
+.*
+
+# Except .gitignore
+!/.gitignore
+
 ### macOS ###
 # General
 .DS_Store
